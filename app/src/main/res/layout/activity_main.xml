@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/fg_left"
+        android:name="com.example.fragmenttest.LeftFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <fragment
+        android:id="@+id/fg_right"
+        android:name="com.example.fragmenttest.RightFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_tip"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="exchange" />
+
+        <Button
+            android:id="@+id/btn_tip_two"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="send" />
+
+        <Button
+            android:id="@+id/btn_tip_three"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="back send" />
+
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="message" />
+
+    </LinearLayout>
+
+</LinearLayout>
